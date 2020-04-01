@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-const onLine = true;
+
 const Contact = (props) => (
   <div className="Contact">
     <img
@@ -21,7 +21,9 @@ const Contact = (props) => (
 
 
 Contact.propTypes = {
-  name : PropTypes.string.isRequired
+  name : PropTypes.string.isRequired,
+  avatar : PropTypes.string.isRequired,
+  onLine : PropTypes.bool
 }
 
 export default Contact;
